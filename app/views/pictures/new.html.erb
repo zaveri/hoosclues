@@ -1,0 +1,10 @@
+<% form_for :picture, @picture, :url => pictures_path, :html => { :multipart => true } do |form| %>
+
+<p>
+	<p><label for="login">Title</label><br/>
+	<%=form.text_field :title%>
+    <p><label for="login">Image</label><br/></p>
+    <%=form.file_field :image %>
+<p><%= submit_tag 'Post Image' %></p>
+</p>
+<% end %>

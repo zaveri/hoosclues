@@ -1,0 +1,18 @@
+<h1>Declare Winner</h1>
+
+<% form_for(@contest) do |f| %>
+  <%= f.error_messages %>
+<b>Enter Contest Winner</b>
+
+  <p>
+    <%= f.label :winner %><br />
+    <%= f.text_field :winner %>
+  </p>
+
+  
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', pictures_path %>

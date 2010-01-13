@@ -1,0 +1,15 @@
+<h1>Comment on <%= @picture.title %></h1>
+<p>Find me in app/views/comments/show.html.erb</p>
+
+<p>
+	<b>Commenter:</b>
+	<%=h @comment.commenter %>
+</p>
+
+<p>
+	<b>Comment:</b>
+	<%=h @comment.body %>
+</p>
+
+<%= link_to 'Edit', edit_picture_comment_path(@picture, @comment) %> |
+<%= link_to 'Back', picture_comments_path(@picture) %>

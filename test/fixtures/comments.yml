@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  body: "cool picture"
+  commenter: "tester"
+  created_at: ""
+  picture: 1
+  
+
+# two:
+#   column: value

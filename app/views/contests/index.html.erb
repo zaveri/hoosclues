@@ -1,0 +1,39 @@
+<!-- 
+<head>
+<style type="text/css">
+td {border: thin solid red}
+</style>
+</head>
+ -->
+
+<h1>Past Contest Winners</h1>
+
+<table style="border: thin solid orange;">
+  <tr>
+    <th>Theme</th>
+    <th>Week</th>
+    <th>Winner</th>
+  </tr>
+
+<% @contests.each do |contest| %>
+  <tr>
+    <td><%=h contest.name %></td>
+    <td><%=h contest.week %></td>
+    <td><%=h contest.winner %></td>
+        <td><%= link_to 'Declare Contest Winner', edit_contest_path(contest) %></td>
+
+<!-- 
+    <td><%= link_to 'Show', contest %></td>
+    <td><%= link_to 'Destroy', contest, :confirm => 'Are you sure?', :method => :delete %></td>
+ -->
+  </tr>
+<% end %>
+</table>
+
+
+<br />
+
+
+<!-- 
+<%= link_to 'New Contest', new_contest_path %>
+ -->
